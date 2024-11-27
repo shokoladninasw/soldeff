@@ -3,6 +3,7 @@
 @section('content')
 <a href="{{ route('forum') }}">Вернуться</a>
 <h2>{{ $main->name }}</h2>
+<p>ID пользователя: {{ $main->user_id }}<p>
 <p>{{ $main->text }}</p>
 <p>{{ $main->created_at }}</p>
 
@@ -27,6 +28,9 @@
     <p>Пожалуйста, <a href="{{ route('log') }}">войдите</a>, чтобы оставлять комментарии.</p>
 @endif
 
+@if($main->comments->isEmpty())
+<p>Комментариев пока что нет</p>
+@else
 <h4>Комментарии:</h4>
 <ul>
     @foreach($main->comments as $comment)
@@ -35,4 +39,5 @@
         </li>
     @endforeach
 </ul>
+@endif
 @endsection

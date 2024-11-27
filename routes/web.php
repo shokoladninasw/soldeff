@@ -5,6 +5,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\RegController;
 use App\Http\Controllers\LogController;
 use App\Http\Controllers\ExitController;
+use App\Http\Controllers\AdminController;
 
 Route::get('/main', [MainController::class, 'index'])->name('main');
 Route::get('/reg', [RegController::class, 'show'])->name('reg');
@@ -20,3 +21,6 @@ Route::post('/forum/{id}/compl', [MainController::class, 'compl'])->name('main.c
 Route::get('/myself', [MainController::class, 'myself'])->name('myself');
 Route::get('/forum/{main}', [MainController::class, 'showPost'])->name('forum.post');
 Route::post('/forum/{main}/comment', [MainController::class, 'addComment'])->name('comment.add');
+Route::get('/admin', [AdminController::class, 'index'])->middleware('auth');
+Route::get('/admin', [AdminController::class, 'show'])->name('admin.table');
+Route::delete('/admin/{main}', [AdminController::class, 'del'])->name('admin.del');

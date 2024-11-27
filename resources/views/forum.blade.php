@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
 <h2>Наш форум</h2>
+@if($mains->isEmpty())
+<p>Постов нет</p>
+@else
 <ul>
     @foreach($mains as $main)
     <li><p>{{ $main->name }}</p>
@@ -18,4 +21,6 @@
 </li>
     @endforeach
 </ul>
+@endif
+{{ $mains->links() }}
 @endsection
