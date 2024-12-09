@@ -7,7 +7,7 @@ use App\Http\Controllers\LogController;
 use App\Http\Controllers\ExitController;
 use App\Http\Controllers\AdminController;
 
-Route::get('/main', [MainController::class, 'index'])->name('main');
+Route::get('/', [MainController::class, 'index'])->name('main');
 Route::get('/reg', [RegController::class, 'show'])->name('reg');
 Route::post('/reg', [RegController::class, 'share'])->name('reg.share');
 Route::get('/log', [LogController::class, 'show'])->name('log');
