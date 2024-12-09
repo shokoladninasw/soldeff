@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soldeff</title>
+</head>
 <div class="head" style="display: flex;">
     <ul style="display: flex; list-style: none;">
         <li><a href="{{ route('main') }}">Главная</a></li>
@@ -23,3 +29,4 @@
 <main>
         @yield('content')
 </main>
+</html>
