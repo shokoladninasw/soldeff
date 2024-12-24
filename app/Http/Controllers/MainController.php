@@ -26,7 +26,7 @@ class MainController extends Controller
     }
     public function share(Request $request) {
         $request->validate([
-            'name'=>'required|min:5|max:30',
+            'name'=>'required|min:5|max:40',
             'text'=>'required|min:20',
         ]);
 

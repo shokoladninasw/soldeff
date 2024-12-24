@@ -1,7 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="{{ route('forum') }}">Вернуться</a>
+
+
+<head>
+    <link rel="stylesheet" href="../css/post.css">
+   <link rel="stylesheet" href="../css/layouts.css">
+   <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<style> p {
+    word-wrap: break-word; 
+}  </style>
+
+<a class="comeback" href="{{ route('forum') }}">Вернуться</a>
 <h2>{{ $main->name }}</h2>
 <p>ID пользователя: {{ $main->user_id }}<p>
 <p>{{ $main->text }}</p>
@@ -13,14 +25,14 @@
         <button type="submit">Это неадекватно</button>
     </form>
 @else
-    <span style="color: green;">Жалоба подана</span>
+    <span style="color: #02BE02;">Жалоба подана</span>
 @endif
 
 @if(Auth::check())
     <form action="{{ route('comment.add', $main->id) }}" method="POST">
         @csrf
         <div>
-            <input name="body" placeholder="Ваш комментарий" required>
+            <textarea name="body" placeholder="Ваш комментарий" required> </textarea>
         </div>
         <button type="submit">Добавить комментарий</button>
     </form>
@@ -41,3 +53,6 @@
 </ul>
 @endif
 @endsection
+  
+</body>
+</html>

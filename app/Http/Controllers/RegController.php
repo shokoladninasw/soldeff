@@ -32,6 +32,6 @@ class RegController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return redirect('main');
+        return redirect(to: '/');
     }
 }

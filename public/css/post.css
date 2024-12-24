@@ -1,0 +1,33 @@
+main {
+    padding: 20px  200px;
+}
+.comeback {
+    font-size: 30px;
+    position: relative;
+    right: 160px;
+    color: white;
+    text-decoration: none;
+}
+textarea {
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    margin: 30px 0;
+}
+button {
+   
+        width: 250px;
+    height: 52px;
+    border-radius: 20px;
+    background-color: #85A1FE;
+    border: none;
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        margin-bottom: 30px;
+    }

@@ -1,0 +1,173 @@
+
+body, html {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: 20px;
+}
+form.leave {
+    display: flex;
+}
+form.leave button {
+    background-color: whitesmoke;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    font-family: Segoe UI; 
+}
+form.leave button:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+
+}
+main {
+    background-color: #003C96;
+    color: white;
+}
+.head {
+    background-color:  #0048B5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+}
+.head ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head ul li{ 
+    
+    display: flex;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    margin: 0 20px;
+    
+    /* text-align: left; */
+    /* text-underline-position: from-font; */
+    /* text-decoration-skip-ink: none; */
+
+}
+.head ul {
+    
+}
+.head ul li a { 
+    text-decoration:  none;
+    color: white;
+    
+}
+.site-name {
+    font-family: MS Gothic;
+font-size: 2.4rem;
+font-weight: 400;
+line-height: 2.4rem;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+footer  a{ 
+    text-decoration: none;
+    color: white;
+
+}
+footer a:hover{ 
+  
+    color:rgb(148, 146, 146);
+}
+
+    footer .site-name { 
+        /* font-size: 35px; */
+       padding: 20px 0;
+    }
+    main {
+        padding-bottom: 40px;
+    }
+footer {
+    padding-top:20px;
+    padding: 10px 0;
+  display: flex;
+  color: white;
+    background-color: #010964;
+  align-items: center;
+  justify-content: space-around;
+}
+footer li {
+    font-size: 1.8rem;
+    list-style: none;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    margin: 0 10px;
+}
+@media (max-width: 800px){
+    .footer-li {
+        font-size: 14.4px;
+
+    }
+}
+
+
+
+@media (max-width: 1500px){  
+body, html {
+
+    font-size: 16px;
+}
+.head ul li{ 
+    margin: 0 15px;
+}
+}
+
+
+@media (max-width: 1150px){  
+    body, html {
+    
+        font-size: 12px;
+    }
+    .head ul li{ 
+        margin: 0 10px;
+    }
+    }
+
+    @media (max-width: 900px) {
+        form.leave button {
+          
+            height: 30px;
+            font-size: 18px;
+        }
+        .head { 
+            height: 165px;
+            display: flex;
+            flex-direction: column;
+        }
+        .head ul li { 
+            height: 30px;
+            font-size: 24px; 
+            margin: 0 7.5px;
+        }
+        .head ul:nth-child(1) { 
+            height: 50px;
+            font-size: 24px; 
+            margin: 0 20px;
+          
+        }
+        .head img {
+            width: 60px;
+            height: 60px;
+        }
+        .site-name {
+            font-size: 35px;
+        }
+    }
+
+    @media (max-width: 600px){
+      
+    }  

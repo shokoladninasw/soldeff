@@ -10,6 +10,6 @@ class ExitController extends Controller
     public function destroy(Request $request) {
         Auth::logout();
         $request->session()->invalidate();
-        return redirect(to: '/main')->with('success', 'Вы успешно вышли из системы.');
+        return redirect(to: '/')->with('success', 'Вы успешно вышли из системы.');
     }
 }

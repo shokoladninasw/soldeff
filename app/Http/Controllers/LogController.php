@@ -18,7 +18,7 @@ class LogController extends Controller
         ]);
 
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect('main')->with('success', 'Вы успешно вошли в систему!');
+            return redirect(to: '/')->with('success', 'Вы успешно вошли в систему!');
         }
         return redirect()->back()->withErrors([
             'email' => 'Эти учетные данные не соответствуют нашим записям.',
